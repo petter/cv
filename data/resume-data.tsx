@@ -1,4 +1,4 @@
-import { GitHubIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Petter Sæther Moen",
@@ -13,13 +13,24 @@ export const RESUME_DATA = {
     email: "pettersmoen@gmail.com",
     tel: "+4745200167",
     social: [
-      { name: "GitHub", url: "https://github.com/petter", icon: GitHubIcon },
+      {
+        name: "GitHub",
+        handle: "petter",
+        url: "https://github.com/petter",
+        icon: <GitHubIcon />,
+      },
       {
         name: "LinkedIn",
+        handle: "Petter Sæther Moen",
         url: "https://linkedin.com/in/pettersmoen",
-        icon: GitHubIcon,
+        icon: <LinkedInIcon />,
       },
-      { name: "X", url: "https://x.com/pettersmoen", icon: XIcon },
+      {
+        name: "X",
+        handle: "@pettersmoen",
+        url: "https://x.com/pettersmoen",
+        icon: <XIcon />,
+      },
     ],
   },
   workHistory: [
