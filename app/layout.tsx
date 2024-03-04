@@ -15,7 +15,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(GeistSans.className, "m-0")}>{children}</body>
+      <body
+        className={cn(
+          GeistSans.className,
+          "m-0 min-h-screen w-full bg-slate-100 p-4",
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
