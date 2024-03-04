@@ -38,35 +38,40 @@ export const RESUME_DATA = {
       company: "Bekk Consulting AS",
       from: "Aug 2021",
       title: "Consultant/Senior Consultant",
-      description: "",
+      description:
+        "Consulted at Entur and the Norwegian Court administration, mainly developing and architecting large scale web applications.",
     },
     {
       company: "Bekk Consulting AS",
       from: "Jun 2020",
       to: "Jul 2020",
       title: "Summer Intern",
-      description: "",
+      description:
+        "Created an informational website showing EV sales statistics for the Norwegian Public Roads Administration (Statens Vegvesen).",
     },
     {
       company: "Bekk Consulting AS",
       from: "Jun 2019",
       to: "Aug 2019",
       title: "Summer Intern",
-      description: "",
+      description:
+        "Modernized a resident verification system for the student welfare organization in Oslo.",
     },
     {
       company: "Fylkesmannen i Møre og Romsdal",
       from: "Jun 2018",
       to: "Jul 2018",
       title: "Summer Intern",
-      description: "",
+      description:
+        "Finished the tourism website for Trollheimen Protected Landscape from the year prior.",
     },
     {
       company: "Fylkesmannen i Møre og Romsdal",
       from: "Jun 2017",
       to: "Jul 2017",
       title: "Summer Intern",
-      description: "",
+      description:
+        "Started working on a tourism website for Trollheimen Protected Landscape. It was developed as a WordPress site with a custom PHP theme.",
     },
   ],
   projects: [

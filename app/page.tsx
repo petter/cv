@@ -47,9 +47,31 @@ export default function Home() {
             </Avatar>
           </div>
         </header>
+
         <Separator />
 
-        <div className="space-y-4">
+        <section className="print:break-inside-avoid">
+          <h2 className="mb-4 text-xl font-bold">Work Experience</h2>
+          <ul className="flex flex-col gap-4">
+            {RESUME_DATA.workHistory.map((work, i) => (
+              <li key={i} className="flex flex-col">
+                <h3 className="font-bold">{work.company}</h3>
+                <div className="flex gap-2 text-sm text-slate-600">
+                  <p className="text-pretty">{work.title}</p>
+                  <span>·</span>
+                  <p className="text-pretty">
+                    {work.from} - {work.to || "Present"}
+                  </p>
+                </div>
+                <p className="max-w-lg text-pretty">{work.description}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <Separator />
+
+        <section className="space-y-4 print:break-inside-avoid">
           <h2 className="mb-4 text-xl font-bold">Projects</h2>
           <p className="max-w-lg text-pretty text-lg">
             This is a list of all the projects I&apos;ve been involved in,
@@ -83,12 +105,7 @@ export default function Home() {
               </li>
             ))}
           </ul>
-        </div>
-
-        <Separator />
-        <div>
-          <h2 className="mb-4 text-xl font-bold">Work Experience</h2>
-        </div>
+        </section>
       </div>
     </main>
   );

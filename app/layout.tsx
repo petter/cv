@@ -18,7 +18,7 @@ export default function RootLayout({
       <body
         className={cn(
           GeistSans.className,
-          "m-0 min-h-screen w-full bg-slate-100 p-4",
+          "m-0 min-h-screen w-full bg-slate-100 p-4 text-slate-800",
         )}
       >
         {children}
