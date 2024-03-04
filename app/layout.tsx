@@ -4,7 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "CV",
+  title: "Petter Sæther Moen - Software Engineer",
   description: "CV for Petter Sæther Moen",
 };
 
