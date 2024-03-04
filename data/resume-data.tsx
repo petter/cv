@@ -74,8 +74,9 @@ export const RESUME_DATA = {
       name: "LettVet",
       href: "https://lett.vet",
       type: "Side project",
-      description: "A journaling system for veterinary clinics.",
-      tags: ["TypeScript", "Next.js", "Tailwind CSS", "Supabase", "Resend"],
+      description:
+        "Founded a SaaS business offering a journaling system for veterinary clinics.",
+      tags: ["Next.js", "Tailwind CSS", "Drizzle", "tRPC"],
     },
     {
       name: "Lovisa frontend architecture",
@@ -83,21 +84,21 @@ export const RESUME_DATA = {
       type: "Work project",
       description:
         "Designed the frontend architecture for the Norwegian Courts' new case mangement system.",
-      tags: ["Micro frontends", "React", "Architecture"],
+      tags: ["Micro frontend", "Architecture"],
     },
     {
       name: "Elsa",
       href: "https://design.domstol.no",
       type: "Work project",
       description: "Lead developer on the Norwegian Courts' design system.",
-      tags: ["TypeScript", "React", "Turborepo", "Storybook"],
+      tags: ["npm publishing", "Turborepo", "Storybook"],
     },
     {
       name: "Custody processing app",
       href: "https://domstol.no",
       type: "Work project",
       description: "A new custody processing app for the Norwegian Courts.",
-      tags: ["TypeScript", "React", "Kotlin", "Ktor", "RabbitMQ"],
+      tags: ["React", "Kotlin", "Ktor", "RabbitMQ"],
     },
     {
       name: "Entur Partner",
@@ -105,7 +106,7 @@ export const RESUME_DATA = {
       type: "Work project",
       description:
         "Developed a micro-frontend framework at Entur, streamlining collaboration for building large-scale web applications.",
-      tags: ["TypeScript", "React", "Java", "Spring"],
+      tags: ["React", "Micro frontend", "Java", "Spring"],
     },
   ],
 };

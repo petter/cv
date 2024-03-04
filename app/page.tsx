@@ -1,17 +1,26 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 import { RESUME_DATA } from "@/data/resume-data";
 
 export default function Home() {
   return (
-    <main className="container relative max-w-4xl rounded-sm bg-white p-8 shadow-xl print:p-2 print:shadow-none">
+    <main className="container relative max-w-4xl rounded-sm bg-white px-16 py-10 shadow-xl print:p-2 print:shadow-none">
       <div className="space-y-8">
         <header className="flex items-center justify-between gap-8">
           <div className="flex-1 space-y-4">
             <div>
               <h1 className="mb-4 text-2xl font-bold">{RESUME_DATA.name}</h1>
-              <p className="text-pretty text-lg text-gray-600">
+              <p className="max-w-lg text-pretty text-lg text-gray-600">
                 {RESUME_DATA.about}
               </p>
             </div>
@@ -39,9 +48,43 @@ export default function Home() {
           </div>
         </header>
         <Separator />
-        <div>
+
+        <div className="space-y-4">
           <h2 className="mb-4 text-xl font-bold">Projects</h2>
+          <p className="max-w-lg text-pretty text-lg">
+            This is a list of all the projects I&apos;ve been involved in,
+            either through work or as a side project.
+          </p>
+          <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+            {RESUME_DATA.projects.map((project) => (
+              <li key={project.name}>
+                <a href={project.href} className="group">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="group-hover:underline">
+                        {project.name}
+                      </CardTitle>
+                      <CardDescription>{project.type}</CardDescription>
+                    </CardHeader>
+                    <CardContent>{project.description}</CardContent>
+                    <CardFooter>
+                      <ul className="flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                          <li key={tag}>
+                            <Badge variant="outline" className="text-xs">
+                              {tag}
+                            </Badge>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardFooter>
+                  </Card>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
+
         <Separator />
         <div>
           <h2 className="mb-4 text-xl font-bold">Work Experience</h2>
