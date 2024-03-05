@@ -33,6 +33,16 @@ export const RESUME_DATA = {
       },
     ],
   },
+  education: [
+    {
+      school: "University of Oslo",
+      program: "Informatics: Programming and System Architecture",
+      from: "Aug 2016",
+      to: "June 2021",
+      description:
+        "M.Sc. in Informatics with a specialization in programming languages/compiler technique. As part of the work on my masters' thesis I extended TypeScript with Package Templates, a language feature that enables class merging, enabling a form of aspect-oriented programming.",
+    },
+  ],
   workHistory: [
     {
       company: "Bekk Consulting AS",

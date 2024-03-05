@@ -2,6 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { WorkHistory } from "./work-history";
 import { Projects } from "./projects";
 import { Intro } from "./intro";
+import { Education } from "./education";
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
         <Intro />
         <Separator />
         <WorkHistory />
+        <Separator />
+        <Education />
         <Separator />
         <Projects />
       </div>
