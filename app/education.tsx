@@ -7,7 +7,7 @@ export function Education() {
       <ul className="flex flex-col gap-4">
         {RESUME_DATA.education.map((edu, i) => (
           <li key={i} className="flex flex-col">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
               <h3 className="font-bold">{edu.school}</h3>
               <p className="text-pretty">
                 {edu.from} - {edu.to || "Present"}
