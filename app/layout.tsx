@@ -19,7 +19,7 @@ export default function RootLayout({
       <body
         className={cn(
           GeistSans.className,
-          "m-0 min-h-screen w-full bg-slate-100 p-4 text-slate-800",
+          "m-0 min-h-screen w-full bg-gradient-to-br from-violet-100 via-purple-200 to-blue-200 p-4 text-slate-800",
         )}
       >
         {children}
