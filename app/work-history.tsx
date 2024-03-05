@@ -7,14 +7,13 @@ export function WorkHistory() {
       <ul className="flex flex-col gap-4">
         {RESUME_DATA.workHistory.map((work, i) => (
           <li key={i} className="flex flex-col">
-            <h3 className="font-bold">{work.company}</h3>
-            <div className="flex gap-2 text-sm text-slate-600">
-              <p className="text-pretty">{work.title}</p>
-              <span>·</span>
+            <div className="flex items-center justify-between">
+              <h3 className="font-bold">{work.company}</h3>
               <p className="text-pretty">
                 {work.from} - {work.to || "Present"}
               </p>
             </div>
+            <p className="text-pretty text-sm text-slate-600">{work.title}</p>
             <p className="max-w-lg text-pretty">{work.description}</p>
           </li>
         ))}
