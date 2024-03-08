@@ -14,7 +14,7 @@ export function Projects() {
     <section className="space-y-4 print:break-inside-avoid">
       <h2 className="mb-4 text-xl font-bold">Projects</h2>
       <p className="max-w-lg text-pretty">
-        Here are som of the projects I&apos;ve been involved in, either through
+        Here are some of the projects I&apos;ve been involved in, either through
         work or as a side project.
       </p>
       <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 print:grid-cols-3">
