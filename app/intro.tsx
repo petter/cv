@@ -5,7 +5,7 @@ import { EmailIcon, TelephoneIcon, WebsiteIcon } from "@/components/icons";
 
 export function Intro() {
   return (
-    <header className="grid gap-8 [grid-template-areas:'img'_'text'_'some'] sm:[grid-template-areas:'text_img'_'some_img'] sm:[grid-template-columns:1fr_min-content]">
+    <header className="grid gap-8 [grid-template-areas:'img'_'text'_'some'] sm:[grid-template-areas:'text_img'_'some_img'] sm:grid-cols-[1fr_min-content]">
       <div className="[grid-area:text]">
         <h1 className="mb-2 text-2xl font-bold">{RESUME_DATA.name}</h1>
         <p className="max-w-lg text-pretty text-gray-600">

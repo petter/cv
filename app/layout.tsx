@@ -20,7 +20,7 @@ export default function RootLayout({
       <body
         className={cn(
           GeistSans.className,
-          "m-0 flex min-h-screen w-full flex-col gap-8 bg-gradient-to-br from-violet-100 via-purple-200 to-blue-200 text-slate-800 sm:p-4 sm:pb-0",
+          "m-0 flex min-h-screen w-full flex-col gap-8 bg-linear-to-br from-violet-100 via-purple-200 to-blue-200 text-slate-800 sm:p-4 sm:pb-0",
         )}
       >
         <div>{children}</div>
