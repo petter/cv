@@ -47,6 +47,7 @@ export const RESUME_DATA = {
     {
       company: "Bekk Consulting AS",
       from: "Aug 2021",
+      to: "Dec 2025",
       title: "Consultant/Senior Consultant",
       description:
         "Consulted at Entur and the Norwegian Court administration, mainly developing and architecting large scale web applications.",
