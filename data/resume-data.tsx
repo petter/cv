@@ -4,7 +4,7 @@ export const RESUME_DATA = {
   name: "Petter Sæther Moen",
   initials: "PSM",
   title: "Software Engineer",
-  location: "Trondheim, Norway, CET",
+  location: "Toronto, Canada",
   about:
     "Full-stack Software Developer with a passion for creating stuff that people want to use.",
   avatarUrl: "https://avatars.githubusercontent.com/u/25374940",
